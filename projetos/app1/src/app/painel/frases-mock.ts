@@ -1,7 +1,7 @@
 import { Frase } from '../shared/frase.model';
 
-// const FRASES: Frase[] = []; -- outra maneira de declarar array´s
-const FRASE: Array<Frase> = [
+// const FRASES: Array<Frase> = []; -- outra maneira de declarar array´s
+export const FRASES: Frase[] = [
     { fraseEng: 'I like to learn', frasePtBr: 'Eu gosto de aprender' },
     { fraseEng: 'I watch tv', frasePtBr: 'Eu assisto tv' },
     { fraseEng: 'How are you?', frasePtBr: 'Como vai você?' },
