@@ -1,7 +1,7 @@
-.exemplo {
-  color: red;
-  font-size: 25px;
-  padding: 5px 10px;
-  box-shadow: 1px 1px 1px 1px #c9c9c7;
-  text-align: center;
+.navbar {
+  background: #1cb0f6;
+}
+
+.navbar-brand {
+  color: #fff;
 }
