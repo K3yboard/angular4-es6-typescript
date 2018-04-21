@@ -31,12 +31,10 @@ export class PainelComponent implements OnInit, OnDestroy {
     }
 
     ngOnDestroy() {
-        console.log('Componente painel foi destroído');
     }
 
     public atualizaResposta(resposta: Event): void {
         this.resposta = (<HTMLInputElement>resposta.target).value;
-        // console.log(this.resposta);
     }
 
     public verificarResposta(): void {
@@ -47,10 +45,8 @@ export class PainelComponent implements OnInit, OnDestroy {
 
             //progresso
             this.progresso = this.progresso + (100 / this.frases.length);
-            console.log(this.progresso);
 
             if(this.rodada === 4) {
-                alert('Você ganhou!');
                 this.encerrarJogo.emit('vitoria');
             }
 
@@ -62,7 +58,6 @@ export class PainelComponent implements OnInit, OnDestroy {
             this.tentativas--;
 
             if(this.tentativas === -1) {
-                alert('Você perdeu todas as tentativas');
                 this.encerrarJogo.emit('derrota');
             }
         }
