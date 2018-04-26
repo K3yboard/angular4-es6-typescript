@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+---
+
+### Modificar o arquivo `angular-cli.json` para usar as dependências do `Tether`, `jQuery` e `Bootstrap`
+
+```
+"styles": [
+  "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "styles.css"
+],
+"scripts": [
+  "../node_modules/jquery/dist/jquery.min.js",
+  "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+],
+```
