@@ -40,3 +40,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   "../node_modules/bootstrap/dist/js/bootstrap.min.js"
 ],
 ```
+
+---
+
+### JSON-Server
+
+Criar uma API Fake
+
+- Instalar o pacote
+
+```
+npm install -g json-server
+```
+
+- Build do server com as informações fake ()
+
+```
+json-server --watch banco_de_dados.json
+```
+
+Subirá um server na porta 3000 e ficará escutando o arquivo json
