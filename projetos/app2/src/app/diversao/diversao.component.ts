@@ -1,15 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { Oferta } from '../shared/oferta.model';
+import { OfertasService } from '../ofertas.service';
 
 @Component({
-  selector: 'app-diversao',
-  templateUrl: './diversao.component.html',
-  styleUrls: ['./diversao.component.css']
+    selector: 'app-diversao',
+    templateUrl: './diversao.component.html',
+    styleUrls: ['./diversao.component.css'],
+    providers: [ OfertasService ]
 })
 export class DiversaoComponent implements OnInit {
 
-  constructor() { }
+    public ofertas: Oferta[];
 
-  ngOnInit() {
-  }
+    constructor(private ofertasService: OfertasService) { }
+
+    ngOnInit() {
+        this.ofertasService.getOfertasDiversao()
+            .then(( ofertas ) => {
+                this.ofertas = ofertas;
+            });
+    }
 
 }
