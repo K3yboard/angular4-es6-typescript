@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { OfertasService } from '../../ofertas.service';
-import { ExecOptionsWithStringEncoding } from 'child_process';
 
 @Component({
     selector: 'app-como-usar',
