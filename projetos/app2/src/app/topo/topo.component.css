@@ -20,5 +20,9 @@
 }
 
 .active {
-    color: #FFF 
+    color: #FFF
+}
+
+.list-group {
+  position: absolute;
 }
