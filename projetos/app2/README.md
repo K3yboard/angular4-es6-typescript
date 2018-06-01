@@ -30,15 +30,19 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ### Modificar o arquivo `angular-cli.json` para usar as dependências do `Tether`, `jQuery` e `Bootstrap`
 
+Na versão nova dp Bootstrap, o `Tether` foi substituido pelo `popper.js`
+
 ```
 "styles": [
   "../node_modules/bootstrap/dist/css/bootstrap.min.css",
   "styles.css"
 ],
 "scripts": [
-  "../node_modules/jquery/dist/jquery.min.js",
-  "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-],
+      "../node_modules/tether/dist/js/tether.min.js",
+      "../node_modules/popper.js/dist/umd/popper.min.js",
+      "../node_modules/jquery/dist/jquery.min.js",
+      "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ],
 ```
 
 ---

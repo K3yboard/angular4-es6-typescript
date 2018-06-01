@@ -27,3 +27,7 @@
   position: absolute;
   z-index: 999;
 }
+
+.fixed-top {
+  background-color: #fff;
+}
