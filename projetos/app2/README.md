@@ -60,3 +60,33 @@ json-server --watch banco_de_dados.json
 ```
 
 Subirá um server na porta 3000 e ficará escutando o arquivo json
+
+---
+
+### Ajustando a formatação de moedas para o padrão brasileiro
+
+```
+npm install --save intl
+```
+
+- Adicionar imports no polyfills
+
+```
+import 'intl'
+import 'intl/locale-data/jsonp/pt-Br';
+```
+
+- Adicionar o LOCALE_ID no módulo do projeto e adicionar os parâmetros nos providers
+
+```
+import { NgModule, LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from "@angular/common";
+import localePt from "@angular/common/locales/pt";
+registerLocaleData(localePt);
+...
+
+providers: [ {provide: LOCALE_ID, useValue: 'pt-Br'} ]
+
+```
+
+---
