@@ -234,6 +234,34 @@
       "complemento": "predio B",
       "formaPagamento": "dinheiro",
       "id": 7
+    },
+    {
+      "endereco": "Rua teste",
+      "numero": "123",
+      "complemento": "casa 1",
+      "formaPagamento": "dinheiro",
+      "id": 8
+    },
+    {
+      "endereco": "Rua teste",
+      "numero": "1",
+      "complemento": "2313",
+      "formaPagamento": "debito",
+      "id": 9
+    },
+    {
+      "endereco": "Teste Teste",
+      "numero": "4123",
+      "complemento": "12311",
+      "formaPagamento": "dinheiro",
+      "id": 10
+    },
+    {
+      "endereco": "Rua 2",
+      "numero": "132",
+      "complemento": "Casa Y",
+      "formaPagamento": "dinheiro",
+      "id": 11
     }
   ]
 }

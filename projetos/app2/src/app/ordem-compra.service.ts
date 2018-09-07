@@ -21,6 +21,7 @@ export class OrdemCompraService {
             JSON.stringify(pedido),
             new RequestOptions({ headers: headers })
         )
-        .map((resposta: Response) => resposta.json().id );
+        // .map((resposta: Response) => resposta.json().id ); // Angular 4
+        .map((resposta: any) => resposta.json().id );
     }
 }
