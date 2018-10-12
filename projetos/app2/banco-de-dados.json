@@ -262,6 +262,13 @@
       "complemento": "Casa Y",
       "formaPagamento": "dinheiro",
       "id": 11
+    },
+    {
+      "endereco": "rua 2",
+      "numero": "123",
+      "complemento": "teste",
+      "formaPagamento": "dinheiro",
+      "id": 12
     }
   ]
 }
