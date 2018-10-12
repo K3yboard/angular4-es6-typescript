@@ -1,14 +1,14 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { OrdemCompraService } from '../ordem-compra.service'
-import CarrinnhoService from '../carrinho.service';
+import { CarrinhoService } from '../carrinho.service';
 import { Pedido } from '../shared/pedido.model'
 
 @Component({
   selector: 'app-ordem-compra',
   templateUrl: './ordem-compra.component.html',
   styleUrls: ['./ordem-compra.component.css'],
-  providers: [ OrdemCompraService, CarrinnhoService ]
+  providers: [ OrdemCompraService ]
 })
 export class OrdemCompraComponent implements OnInit {
 
@@ -18,7 +18,7 @@ export class OrdemCompraComponent implements OnInit {
 
     constructor(
         private ordemCompraService: OrdemCompraService,
-        private carrinhoService: CarrinnhoService
+        private carrinhoService: CarrinhoService
     ) { }
 
     ngOnInit() {

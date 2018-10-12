@@ -4,7 +4,14 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
+import { CarrinhoService } from './carrinho.service';
+
 import { ROUTES } from './app.routes';
+
+// Pipes
+import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
+import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
+import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
 
 import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
@@ -17,11 +24,6 @@ import { ComoUsarComponent } from './oferta/como-usar/como-usar.component';
 import { OndeFicaComponent } from './oferta/onde-fica/onde-fica.component';
 import { registerLocaleData } from "@angular/common";
 import localePt from "@angular/common/locales/pt";
-
-// Pipes
-import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
-import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
-import { OrdemCompraSucessoComponent } from './ordem-compra-sucesso/ordem-compra-sucesso.component';
 
 registerLocaleData(localePt);
 
@@ -46,7 +48,9 @@ registerLocaleData(localePt);
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [ { provide: LOCALE_ID, useValue: 'pt-Br'} ],
+  providers: [
+    CarrinhoService,
+    { provide: LOCALE_ID, useValue: 'pt-Br'} ],
   bootstrap: [AppComponent]
 })
 
